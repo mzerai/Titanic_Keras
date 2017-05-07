@@ -93,7 +93,7 @@ def plots(history):
     plt.close()
 
 def test(batch_size):
-    test = pd.read_csv('Data/test.csv', header=0)
+    test = pd.read_csv('test.csv', header=0)
     test_ids = test['PassengerId']
     test = preprocess(test)
     group_titles(test)
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     np.random.seed(seed)
 
     #read training dataset
-    train = pd.read_csv('Data/train.csv', header=0)
+    train = pd.read_csv('train.csv', header=0)
 
     #preprocess train.csv
     preprocess(train)
